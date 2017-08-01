@@ -1,3 +1,5 @@
 PYTHON LEARNING NOTES/CODES/PROJECTS
 
 hanoi.py: 汉诺塔游戏。输入数字、三个塔的名字，输出执行步骤；
+
+str2float: 字符串转化为浮点数。python中可以用float(str)直接实现，这里利用map/reduce和lambda高度抽象；
