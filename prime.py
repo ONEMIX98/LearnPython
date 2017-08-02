@@ -7,7 +7,7 @@ def odd_iter():
 
 #not_divisible 输入参数n， 内部定义一个匿名函数，输入参数x， 判断x是否能被n整除
 def not_divisible(n):
-    return lambda x: x % n > 0
+    return lambda x: x % n > 0 # 注意这里定义了一个匿名函数，所以实际上not_divisible函数要接受两个参数
 
 #生成无穷素数数列
 def prime():

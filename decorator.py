@@ -10,6 +10,8 @@ def log(*args):
             print(f"end {text} {func.__name__}()")
             return result
         return wrapper
+    # if对应着new = log('excute')(new), else对应着new = log(new)
+    # decorator(func)--> decorator需要一个函数参数
     return decorator if isinstance(args[0],str) else decorator(args[0])
 
 # 相当于 now = log('excute')(now), 先执行log('excute'),返回
